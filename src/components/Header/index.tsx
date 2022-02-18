@@ -2,7 +2,7 @@
 import React from 'react';
 import { Container, GithubLogo, SearchForm } from './styles';
 
-const Header: React.FC = () => {
+function Header() {
   return (
     <Container>
       <GithubLogo />
@@ -11,6 +11,6 @@ const Header: React.FC = () => {
       </SearchForm>
     </Container>
   );
-};
+}
 
 export default Header;
