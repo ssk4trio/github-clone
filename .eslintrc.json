@@ -19,6 +19,13 @@
   "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint"],
   "rules": {
     // "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/require-default-props": [
+      0,
+      {
+        "forbidDefaultForRequired": false,
+        "ignoreFunctionalComponents": true
+      }
+    ],
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
