@@ -31,3 +31,9 @@ export const SearchForm = styled.form`
     transition: width 200ms ease-out, color 200ms ease-out;
   }
 `;
+
+export const Main = styled.div``;
+
+export const LeftSide = styled.div``;
+
+export const RightSide = styled.div``;
