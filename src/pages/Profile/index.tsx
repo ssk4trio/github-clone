@@ -1,13 +1,32 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
-import { Container, Main, LeftSide, RightSide, Repos } from './styles';
+import {
+  Container,
+  Main,
+  LeftSide,
+  RightSide,
+  Repos,
+  CalendarHeading,
+  Tab,
+} from './styles';
 
 import ProfileData from '../../components/ProfileData';
 import RepoCard from '../../components/RepoCard';
+import RandomCalendar from '../../components/RandomCalendar';
+import TabContent from '../../components/TabComponent';
 
 function Profile() {
   return (
     <Container>
+      <Tab className="desktop">
+        <div className="wrapper">
+          <span className="offset" />
+
+          <TabContent />
+        </div>
+        <span className="line" />
+      </Tab>
+
       <Main>
         <LeftSide>
           <ProfileData
@@ -23,6 +42,10 @@ function Profile() {
           />
         </LeftSide>
         <RightSide>
+          <Tab className="mobile">
+            <TabContent />
+            <span className="line" />
+          </Tab>
           <Repos>
             <h2>Random Repos</h2>
             <div>
@@ -39,6 +62,10 @@ function Profile() {
               ))}
             </div>
           </Repos>
+          <CalendarHeading>
+            Random calendar (do not represent actual data)
+          </CalendarHeading>
+          <RandomCalendar />
         </RightSide>
       </Main>
     </Container>
