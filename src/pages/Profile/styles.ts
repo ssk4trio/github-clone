@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   --horizontalPadding: 16px;
-  --verticalPAdding: 24px;
+  --verticalPadding: 24px;
 
-  padding: var(--verticalPAdding) var(--horizontalPadding);
+  padding: var(--verticalPadding) var(--horizontalPadding);
 `;
 
 export const Main = styled.div`
@@ -28,7 +28,7 @@ export const LeftSide = styled.div`
 
 export const RightSide = styled.div`
   @media (min-width: 768px) {
-    width: 25%;
+    width: 75%;
   }
 `;
 export const Repos = styled.div`
@@ -50,4 +50,9 @@ export const Repos = styled.div`
       grid-auto-rows: minmax(min-content, max-content);
     }
   }
+`;
+export const CalendarHeading = styled.span`
+  font-size: 16px;
+  margin: 36px 0 9px;
+  display: inline-flex;
 `;
